@@ -1,5 +1,5 @@
 package leetcode
 
 func twoSum(nums []int, target int) []int {
-	return []int{}
+	return []int{0, 0}
 }
