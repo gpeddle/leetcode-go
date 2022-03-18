@@ -1,0 +1,7 @@
+github.com/mitranim/gow v0.0.0-20220125090630-5348a1592279 h1:PeJYxfWcLaG9OWJMRUouTNrud14jL+Li9lCGtCQl76g=
+github.com/mitranim/gow v0.0.0-20220125090630-5348a1592279/go.mod h1:3gBX+EQCmDkl0bLeDDEp5GLh1F0jZYenBpIdxoyAF+w=
+github.com/rjeczalik/notify v0.9.2 h1:MiTWrPj55mNDHEiIX5YUSKefw/+lCQVoAFmD6oQm5w8=
+github.com/rjeczalik/notify v0.9.2/go.mod h1:aErll2f0sUX9PXZnVNyeiObbmTlk5jnMoCa4QEjJeqM=
+golang.org/x/sys v0.0.0-20180926160741-c2ed4eda69e7/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
+golang.org/x/sys v0.0.0-20210917161153-d61c044b1678 h1:J27LZFQBFoihqXoegpscI10HpjZ7B5WQLLKL2FZXQKw=
+golang.org/x/sys v0.0.0-20210917161153-d61c044b1678/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
