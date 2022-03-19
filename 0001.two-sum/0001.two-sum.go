@@ -1,5 +1,14 @@
 package leetcode
 
 func twoSum(nums []int, target int) []int {
-	return []int{0, 0}
+
+	visited := make(map[int]int)
+	for currentIndex, currentValue := range nums {
+		if candidateIndex, found := visited[target-currentValue]; found {
+			return []int{candidateIndex, currentIndex}
+		}
+		visited[currentValue] = currentIndex
+	}
+
+	return []int{}
 }

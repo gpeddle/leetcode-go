@@ -5,7 +5,7 @@ in the root directory:
 - `mkdir ####-name-of-problem`
 - `touch $_/$_.go`
 - `gotests -all -w -parallel $_`
-- revist the problem definition and copy the inputs and output to the test table:
+- revisit the problem definition and copy the inputs and output to the test table:
 
 
 
