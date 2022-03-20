@@ -1,9 +1,5 @@
 package leetcode
 
-import (
-	"math"
-)
-
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
@@ -19,78 +15,42 @@ type ListNode struct {
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 
-	n1 := toInteger(l1)
-	if n1 == 0 {
-		return l2
-	}
-	n2 := toInteger(l2)
-	if n2 == 0 {
-		return l1
-	}
+	dummyHead := ListNode{}
+	p := l1
+	q := l2
+	curr := &dummyHead
+	carry := 0
 
-	sum := n1 + n2
-
-	result := toList(sum)
-	return result
-}
-
-func toInteger(list *ListNode) int {
-
-	var result = 0
-	pow := 0
-	for list != nil {
-		result += list.Val * int(math.Pow10(pow))
-		pow++
-		list = list.Next
-	}
-	return result
-}
-
-func toList(num int) *ListNode {
-
-	var (
-		head     *ListNode
-		current  *ListNode
-		previous *ListNode
-	)
-	working := num
-
-	for working != 0 {
-
-		digit := working % 10
-		working = (working - digit) / 10
-		current = &ListNode{
-			Val:  digit,
-			Next: nil,
-		}
-
-		if head == nil {
-			head = current
+	for p.Next != nil || q.Next != nil {
+		var x int
+		if p.Next != nil {
+			x = p.Val
 		} else {
-			previous.Next = current
+			x = 0
 		}
-		previous = current
 
+		var y int
+		if q.Next != nil {
+			y = q.Val
+		} else {
+			y = 0
+		}
+
+		sum := carry + x + y
+
+		carry = sum / 10
+		curr.Next = &ListNode{Val: sum % 10}
+		curr = curr.Next
+
+		if p.Next != nil {
+			p = p.Next
+		}
+		if q.Next != nil {
+			q = q.Next
+		}
 	}
-	return head
+	if carry > 0 {
+		curr.Next = &ListNode{Val: carry}
+	}
+	return dummyHead.Next
 }
-
-/*
-func reverse(head *ListNode) *ListNode {
-
-	if head == nil || head.Next == nil {
-		return head
-	}
-	working := head.Next
-	reversed := head
-	reversed.Next = nil
-
-	for working != nil {
-		tmp := working
-		working = working.Next
-		tmp.Next = reversed
-		reversed = tmp
-	}
-	return reversed
-}
-*/
