@@ -77,4 +77,4 @@ Now you can continuously run Go tests with:
 - testing setup inspired by: https://www.youtube.com/watch?v=yKLTOQFcXsE&t=270s
 - gotests: https://github.com/cweill/gotests
 - gow: https://github.com/mitranim/gow
-- grc: 
+- grc: https://github.com/garabik/grc

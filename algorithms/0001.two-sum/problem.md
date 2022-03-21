@@ -40,6 +40,10 @@ Only one valid answer exists.
 
 Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
 
-References:
+Result
 
-- https://leetcode.com/problems/two-sum/
+```
+Success
+Runtime: 13 ms, faster than 47.32% of Go online submissions for Two Sum.
+Memory Usage: 4.3 MB, less than 54.56% of Go online submissions for Two Sum.
+```
