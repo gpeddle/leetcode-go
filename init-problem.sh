@@ -1,10 +1,11 @@
 #!/bin/bash
 
 if [[ $# -ne 1 ]] ; then
-    echo watch.sh [problem-dir]
+    echo init-problem.sh [problem-dir]
     exit 1
 fi
 
-problem_args="$1/$1.go $1/$1_test.go"
+mkdir algorithms/$1
+touch algorithms/$1/$1.go
+touch algorithms/$1/problem.md
 
-grc gow test -v $problem_args
