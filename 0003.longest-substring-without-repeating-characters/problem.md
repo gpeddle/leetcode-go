@@ -35,3 +35,11 @@ Constraints:
 0 <= s.length <= 5 * 104
 s consists of English letters, digits, symbols and spaces.
 ```
+
+Results
+
+```
+Success
+Runtime: 502 ms, faster than 6.07% of Go online submissions for Longest Substring Without Repeating Characters.
+Memory Usage: 8.2 MB, less than 7.98% of Go online submissions for Longest Substring Without Repeating Characters.
+```
