@@ -44,6 +44,25 @@ Input: s = "A", numRows = 1
 Output: "A"
 ```
 
+Added 4:
+
+```
+Input: s = "NOWISTHETIMEFORALLGOODMENTOCOMETOTHEAIDOFTHEIRCOUNTRY", numRows = 5
+Output:    "NTLNOFUOEIALETTTOTONWHMRGMOEHDHCTITEOODCMEIERRSFOOAIY"
+Explanation:
+
+N       T       L       N       O       F       U
+O     E I     A L     E T     T T     O T     O N
+W   H   M   R   G   M   O   E   H   D   H   C   T
+I T     E O     O D     C M     E I     E R     R
+S       F       O       O       A       I       Y
+```
+```
+length: 53
+(0,0) (1,8) (2, 16) (3,24) (4,32) (5,48) (6,64)
+
+```
+
 Constraints:
 
 ```

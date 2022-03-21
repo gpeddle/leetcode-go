@@ -28,6 +28,14 @@ func Test_convert(t *testing.T) {
 			},
 			want: "A",
 		},
+		{
+			name: "added 2",
+			args: args{
+				s:       "NOWISTHETIMEFORALLGOODMENTOCOMETOTHEAIDOFTHEIRCOUNTRY",
+				numRows: 5,
+			},
+			want: "NTLNOFUOEIALETTTOTONWHMRGMOEHDHCTITEOODCMEIERRSFOOAIY",
+		},
 	}
 
 	for _, tt := range tests {
