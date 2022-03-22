@@ -13,15 +13,15 @@ func Test_convert(t *testing.T) {
 		want string
 	}{
 		{
-			name: "",
+			name: "example-1",
 			args: args{
 				s:       "PAYPALISHIRING",
-				numRows: 4,
+				numRows: 3,
 			},
-			want: "PAYPALISHIRING",
+			want: "PAHNAPLSIIGYIR",
 		},
 		{
-			name: "example 2",
+			name: "example-2-single-char",
 			args: args{
 				s:       "A",
 				numRows: 1,
@@ -29,12 +29,68 @@ func Test_convert(t *testing.T) {
 			want: "A",
 		},
 		{
-			name: "added 2",
+			name: "2-rows-odd",
+			args: args{
+				s:       "ABC",
+				numRows: 2,
+			},
+			want: "ACB",
+		},
+		{
+			name: "2-rows-even",
+			args: args{
+				s:       "ABCD",
+				numRows: 2,
+			},
+			want: "ACBD",
+		},
+		{
+			name: "3-rows-odd",
+			args: args{
+				s:       "ABCDEFGHI",
+				numRows: 3,
+			},
+			want: "AEIBDFHCG",
+		},
+		{
+			name: "3-rows-even",
+			args: args{
+				s:       "ABCDEFGHIJ",
+				numRows: 3,
+			},
+			want: "AEIBDFHJCG",
+		},
+		{
+			name: "4-rows-odd",
+			args: args{
+				s:       "ABCDEFGHIJK",
+				numRows: 4,
+			},
+			want: "AGBFHCEIKDJ",
+		},
+		{
+			name: "4-rows-even",
+			args: args{
+				s:       "ABCDEFGHIJKLMNOP",
+				numRows: 4,
+			},
+			want: "AGMBFHLNCEIKODJP",
+		},
+		{
+			name: "typing-test",
 			args: args{
 				s:       "NOWISTHETIMEFORALLGOODMENTOCOMETOTHEAIDOFTHEIRCOUNTRY",
 				numRows: 5,
 			},
 			want: "NTLNOFUOEIALETTTOTONWHMRGMOEHDHCTITEOODCMEIERRSFOOAIY",
+		},
+		{
+			name: "1-row-long",
+			args: args{
+				s:       "ENGLANDEXPECTSEVERYMANTODOHISDUTY",
+				numRows: 1,
+			},
+			want: "ENGLANDEXPECTSEVERYMANTODOHISDUTY",
 		},
 	}
 

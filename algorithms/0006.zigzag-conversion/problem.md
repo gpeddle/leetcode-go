@@ -23,6 +23,10 @@ Example 1:
 ```
 Input: s = "PAYPALISHIRING", numRows = 3
 Output: "PAHNAPLSIIGYIR"
+Explanation:
+P   A   H   N
+A P L S I I G
+Y   I   R   
 ```
 
 Example 2:
@@ -69,4 +73,12 @@ Constraints:
 1 <= s.length <= 1000
 s consists of English letters (lower-case and upper-case), ',' and '.'.
 1 <= numRows <= 1000
+```
+
+Results:
+
+```
+Success
+Runtime: 20 ms, faster than 36.72% of Go online submissions for Zigzag Conversion.
+Memory Usage: 6.9 MB, less than 50.80% of Go online submissions for Zigzag Conversion.
 ```
