@@ -6,4 +6,5 @@ if [[ $# -ne 1 ]] ; then
 fi
 
 # create tests
+
 gotests -all -parallel -w $1
