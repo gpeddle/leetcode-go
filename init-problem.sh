@@ -1,9 +1,10 @@
 #!/bin/bash
 
 if [[ $# -ne 1 ]] ; then
-    echo init-problem.sh [problem-dir]
+    echo init-problem.sh [problem-subdir]
     exit 1
 fi
+
 
 mkdir algorithms/$1
 touch algorithms/$1/$1.go

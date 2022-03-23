@@ -5,6 +5,8 @@ if [[ $# -ne 1 ]] ; then
     exit 1
 fi
 
-problem_args="algorithms/$1/$1.go algorithms/$1/$1_test.go"
+fullname=$1
+problem=${fullname:11}
+problem_args="algorithms/${problem}/${problem}.go algorithms/${problem}/${problem}_test.go"
 
 grc gow test -v $problem_args
