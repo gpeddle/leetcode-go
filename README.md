@@ -1,4 +1,4 @@
-#leetcode-go
+# leetcode-go
 
 *Documenting my solutions to leetcode problems in Go.*
 
