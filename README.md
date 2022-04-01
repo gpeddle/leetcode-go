@@ -1,3 +1,12 @@
+#leetcode-go
+
+*Documenting my solutions to leetcode problems in Go.*
+
+This repo contains both the code for the solutions and the tests used while developing them.
+The workflow for this is simple and clean, allowing easy setup of a new problem and
+a consistent working/testing environment, along with collecting the results in one place.
+
+
 ## Adding a new problem
 
 in the root directory:
